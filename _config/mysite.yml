@@ -1,0 +1,5 @@
+---
+Name: site
+---
+SilverStripe\Core\Manifest\ModuleManifest:
+  project: site

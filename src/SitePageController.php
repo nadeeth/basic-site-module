@@ -1,6 +1,7 @@
 <?php
 
 use SilverStripe\CMS\Controllers\ContentController;
+use SilverStripe\View\Requirements;
 
 class SitePageController extends ContentController
 {
@@ -24,7 +25,16 @@ class SitePageController extends ContentController
     protected function init()
     {
         parent::init();
-        // You can include any CSS or JS required by your project here.
-        // See: https://docs.silverstripe.org/en/developer_guides/templates/requirements/
+
+        //CSS
+        Requirements::css("site/css/bootstrap.min.css");
+        Requirements::css("site/css/styles.css");
+        Requirements::css("site/fonts/fontawesome-free-5.0.6/web-fonts-with-css/css/fontawesome-all.min.css");
+
+        //JavaScript
+        Requirements::javascript("site/javascript/jquery-3.2.1.slim.min.js");
+        Requirements::javascript("site/javascript/popper.min.js");
+        Requirements::javascript("site/javascript/bootstrap.min.js");
+        Requirements::javascript("site/javascript/app.js");
     }
 }

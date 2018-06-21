@@ -1,29 +1,20 @@
 <!DOCTYPE html>
-<!--[if !IE]><!-->
 <html lang="$ContentLocale">
-<!--<![endif]-->
-<!--[if IE 6 ]><html lang="$ContentLocale" class="ie ie6"><![endif]-->
-<!--[if IE 7 ]><html lang="$ContentLocale" class="ie ie7"><![endif]-->
-<!--[if IE 8 ]><html lang="$ContentLocale" class="ie ie8"><![endif]-->
-<head>
-	<% base_tag %>
-	<title><% if $MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> &raquo; $SiteConfig.Title</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	$MetaTags(false)
-	<!--[if lt IE 9]>
-	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-	<%--<% require themedCSS('layout') %>--%>
-	<!--<link rel="shortcut icon" href="themes/simple/images/favicon.ico" />-->
-</head>
-<body>
-<% include SiteHeader %>
-$Layout
-<% include SiteFooter %>
-
-<%--<% require themedJavascript('script') %>--%>
-
-</body>
+    <head>
+        <% base_tag %>
+        <title><% if $MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> &raquo; $SiteConfig.Title</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        $MetaTags(false)
+        <link rel="shortcut icon" href="site/themes/site/templates/images/icons/favicon.ico" />
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:900|Montserrat" rel="stylesheet">
+    </head>
+    <body>
+    <% include SiteHeader %>
+    $Layout
+    <% include SiteSearchModal %>
+    <%-- <% include SiteFooter %> --%>
+    </body>
 </html>

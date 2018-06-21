@@ -1,3 +1,4 @@
 SitePage:
   page1:
     Title: Page One
+    CanViewType: true

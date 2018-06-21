@@ -1,0 +1,24 @@
+{
+  "name": "SilverStripeBasicSite",
+  "version": "1.0.0",
+  "description": "A module to create a basic SivlerStripe website",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nadeeth/basic-site-module.git"
+  },
+  "keywords": [
+    "SilverStripe",
+    "4",
+    "Basic"
+  ],
+  "author": "Nadeeth Lansakara",
+  "license": "BSD",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}

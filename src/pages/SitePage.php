@@ -2,6 +2,7 @@
 
 use SilverStripe\CMS\Model\SiteTree;
 use SilverStripe\Assets\Image;
+use SilverStripe\SiteConfig\SiteConfig;
 use SilverStripe\Forms\FileHandleField;
 use SilverStripe\Core\Injector\Injector;
 
@@ -10,7 +11,8 @@ class SitePage extends SiteTree
     private static $db = [];
 
     private static $has_one = [
-        'Banner' => Image::class
+        'Banner' => Image::class,
+        'SiteConfig' => SiteConfig::class
     ];
 
     public function getCMSFields()

@@ -6,7 +6,7 @@ use SilverStripe\SiteConfig\SiteConfig;
 use SilverStripe\Forms\FileHandleField;
 use SilverStripe\Core\Injector\Injector;
 
-class SitePage extends SiteTree
+class SitePage extends Page
 {
     private static $db = [];
 

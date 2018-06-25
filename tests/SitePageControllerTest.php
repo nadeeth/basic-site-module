@@ -9,8 +9,7 @@ class SitePageControllerTest extends FunctionalTest
     public function testViewSitePage()
     {
         $obj = $this->objFromFixture('SitePage', 'page1');
-        $page = $this->get('page-one/');
-        //TODO : Fix this test
-        //$this->assertEquals(200, $page->getStatusCode());
+        $page = $this->get('page-one?stage=Stage');
+        $this->assertEquals(200, $page->getStatusCode());
     }
 }

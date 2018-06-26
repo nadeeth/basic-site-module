@@ -2,7 +2,7 @@
 
 use SilverStripe\CMS\Controllers\ContentController;
 
-class HomePageFullscreenController extends SitePageController
+class HomePageFullscreenController extends PageController
 {
     /**
      * An array of actions that can be accessed via a request. Each array element should be an action name, and the

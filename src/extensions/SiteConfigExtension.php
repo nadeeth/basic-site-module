@@ -19,7 +19,7 @@ class SiteConfigExtension extends DataExtension
     ];
 
     private static $has_many = [
-        'FooterMenu' => SitePage::class
+        'FooterMenu' => Page::class
     ];
 
     public function updateCMSFields(FieldList $fields)

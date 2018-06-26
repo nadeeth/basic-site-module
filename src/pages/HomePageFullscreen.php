@@ -10,7 +10,7 @@ use SilverStripe\Assets\Image;
 use SilverStripe\Forms\FileHandleField;
 use SilverStripe\Core\Injector\Injector;
 
-class HomePageFullscreen extends SitePage
+class HomePageFullscreen extends Page
 {
     private static $db = [
         'Slider' => DBBoolean::class

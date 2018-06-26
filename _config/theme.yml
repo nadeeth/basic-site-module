@@ -3,6 +3,7 @@ Name: basic
 ---
 SilverStripe\View\SSViewer:
   themes:
+    - 'site'
     - '$default'
 SilverStripe\i18n\i18n:
   default_locale: 'en_US'
